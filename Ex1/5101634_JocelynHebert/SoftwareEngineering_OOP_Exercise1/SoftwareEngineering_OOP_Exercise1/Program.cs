@@ -29,10 +29,9 @@
             m1.BorrowBook();
         }
 
-        for (int i = 0; i < m2.GetMaxBorrowLimit(); i++)
+        for (int i = 0; i < m2.GetMaxBorrowLimit() + 1; i++)
         {
             m2.BorrowBook();
-            Console.WriteLine(m2.GetBooksBorrowed());
         }
 
         for (int i = 0; i < m3.GetMaxBorrowLimit() + 1; i++)
